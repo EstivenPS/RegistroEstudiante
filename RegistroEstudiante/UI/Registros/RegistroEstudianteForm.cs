@@ -60,6 +60,8 @@ namespace RegistroEstudiante
             CelularmaskedTextBox.Text = string.Empty;
             EmailTextBox.Text = string.Empty;
             FechaNacimientoDateTimePicker.Value = DateTime.Now;
+            SexoComboBox.Text = string.Empty;
+            BalanceTextBox.Text = string.Empty;
             MyerrorProvider.Clear();
 
         }
@@ -74,14 +76,15 @@ namespace RegistroEstudiante
             Estudiante estudiante = new Estudiante();
             estudiante.EstudianteID = Convert.ToInt32(IDNumericUpDown.Value);
             estudiante.Matricula = MatriculamaskedTextBox.Text;
-            estudiante.Apellido = ApellidoTextBox.Text;
+            estudiante.Nombres = NombreTextBox.Text;
+            estudiante.Apellidos = ApellidoTextBox.Text;
             estudiante.Cedula = CedulamaskedTextBox.Text;
             estudiante.Telefono = TelefonomaskedTextBox.Text;
             estudiante.Celular = CelularmaskedTextBox.Text;
             estudiante.Email = EmailTextBox.Text;
             estudiante.FechaNacimiento = FechaNacimientoDateTimePicker.Value;
             estudiante.Sexo = SexoComboBox.SelectedIndex;
-            estudiante.Balance = Convert.ToDouble(BalanceTextBox.Text);
+            estudiante.Balance = Convert.ToDecimal(BalanceTextBox.Text);
 
             return estudiante;
         }
@@ -90,8 +93,8 @@ namespace RegistroEstudiante
         {
             IDNumericUpDown.Value = estudiante.EstudianteID;
             MatriculamaskedTextBox.Text = estudiante.Matricula;
-            NombreTextBox.Text = estudiante.Nombre;
-            ApellidoTextBox.Text = estudiante.Apellido;
+            NombreTextBox.Text = estudiante.Nombres;
+            ApellidoTextBox.Text = estudiante.Apellidos;
             CedulamaskedTextBox.Text = estudiante.Cedula;
             TelefonomaskedTextBox.Text = estudiante.Telefono;
             CelularmaskedTextBox.Text = estudiante.Celular;
@@ -100,43 +103,11 @@ namespace RegistroEstudiante
             SexoComboBox.SelectedIndex = estudiante.Sexo;
             BalanceTextBox.Text = Convert.ToString(estudiante.Balance);
         }
-
-        private void GuardarButton_Click(object sender, EventArgs e)
-        {
-            Estudiante estudiante;
-            bool paso = false;
-
-            if (!Validar())
-                return;
-
-            estudiante = LLenaClase();
-
-            if (IDNumericUpDown.Value == 0)
-                paso = EstudiantesBLL.Guardar(estudiante);
-            else
-            {
-                if(!ExisteEnLaBaseDeDatos())
-                {
-                    MessageBox.Show("No se puede modificar un estudiante que no existe", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-                paso = EstudiantesBLL.Modificar(estudiante);
-            }
-
-            if (paso)
-            {
-                Limpiar();
-                MessageBox.Show("Guardado!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-                MessageBox.Show("No fue posible guardar!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        }
-
         private bool Validar()
         {
-            bool paso = false;
+            bool paso = true;
             MyerrorProvider.Clear();
-                        
+
             if (string.IsNullOrWhiteSpace(MatriculamaskedTextBox.Text.Replace("-", "")))
             {
                 MyerrorProvider.SetError(MatriculamaskedTextBox, "El campo Matricula no puede estar vacio");
@@ -158,21 +129,21 @@ namespace RegistroEstudiante
                 paso = false;
             }
 
-            if (string.IsNullOrWhiteSpace(CedulamaskedTextBox.Text.Replace("-","")))
+            if (string.IsNullOrWhiteSpace(CedulamaskedTextBox.Text.Replace("-", "")))
             {
                 MyerrorProvider.SetError(CedulamaskedTextBox, "El campo Cedula no puede estar vacio");
                 CedulamaskedTextBox.Focus();
                 paso = false;
             }
 
-            if (string.IsNullOrWhiteSpace(TelefonomaskedTextBox.Text.Replace("-","")))
+            if (string.IsNullOrWhiteSpace(TelefonomaskedTextBox.Text.Replace("-", "")))
             {
                 MyerrorProvider.SetError(TelefonomaskedTextBox, "El campo Telefono no puede estar vacio");
                 TelefonomaskedTextBox.Focus();
                 paso = false;
             }
 
-            if (string.IsNullOrWhiteSpace(CelularmaskedTextBox.Text.Replace("-","")))
+            if (string.IsNullOrWhiteSpace(CelularmaskedTextBox.Text.Replace("-", "")))
             {
                 MyerrorProvider.SetError(CelularmaskedTextBox, "El campo Celular no puede estar vacio");
                 CelularmaskedTextBox.Focus();
@@ -216,6 +187,37 @@ namespace RegistroEstudiante
             return (estudiante != null);
         }
 
+        private void GuardarButton_Click(object sender, EventArgs e)
+        {
+            Estudiante estudiante;
+            bool paso = false;
+
+            if (!Validar())
+                return;
+
+            estudiante = LLenaClase();
+
+            if (IDNumericUpDown.Value == 0)
+                paso = EstudiantesBLL.Guardar(estudiante);
+            else
+            {
+                if(!ExisteEnLaBaseDeDatos())
+                {
+                    MessageBox.Show("No se puede modificar un estudiante que no existe", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                paso = EstudiantesBLL.Modificar(estudiante);
+            }
+
+            if (paso)
+            {
+                Limpiar();
+                MessageBox.Show("Guardado!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+                MessageBox.Show("No fue posible guardar!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
         private void BuscarButton_Click(object sender, EventArgs e)
         {
             int id;
@@ -235,6 +237,11 @@ namespace RegistroEstudiante
             {
                 MessageBox.Show("Estudiante No Encontrado");
             }
+        }
+
+        private void IDNumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

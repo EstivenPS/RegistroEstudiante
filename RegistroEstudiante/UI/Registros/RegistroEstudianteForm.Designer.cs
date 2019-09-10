@@ -91,7 +91,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 106);
+            this.label4.Location = new System.Drawing.Point(12, 110);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 13);
             this.label4.TabIndex = 3;
@@ -100,7 +100,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 132);
+            this.label5.Location = new System.Drawing.Point(12, 136);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 13);
             this.label5.TabIndex = 4;
@@ -109,7 +109,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 158);
+            this.label6.Location = new System.Drawing.Point(12, 162);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 13);
             this.label6.TabIndex = 5;
@@ -118,7 +118,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 185);
+            this.label7.Location = new System.Drawing.Point(13, 189);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(42, 13);
             this.label7.TabIndex = 6;
@@ -127,7 +127,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(13, 212);
+            this.label8.Location = new System.Drawing.Point(13, 216);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(35, 13);
             this.label8.TabIndex = 7;
@@ -162,31 +162,31 @@
             // 
             // NombreTextBox
             // 
-            this.NombreTextBox.Location = new System.Drawing.Point(130, 77);
+            this.NombreTextBox.Location = new System.Drawing.Point(123, 77);
             this.NombreTextBox.Name = "NombreTextBox";
-            this.NombreTextBox.Size = new System.Drawing.Size(160, 20);
+            this.NombreTextBox.Size = new System.Drawing.Size(167, 20);
             this.NombreTextBox.TabIndex = 13;
             // 
             // ApellidoTextBox
             // 
-            this.ApellidoTextBox.Location = new System.Drawing.Point(130, 103);
+            this.ApellidoTextBox.Location = new System.Drawing.Point(123, 103);
             this.ApellidoTextBox.Name = "ApellidoTextBox";
-            this.ApellidoTextBox.Size = new System.Drawing.Size(160, 20);
+            this.ApellidoTextBox.Size = new System.Drawing.Size(167, 20);
             this.ApellidoTextBox.TabIndex = 14;
             // 
             // EmailTextBox
             // 
-            this.EmailTextBox.Location = new System.Drawing.Point(130, 209);
+            this.EmailTextBox.Location = new System.Drawing.Point(123, 209);
             this.EmailTextBox.Name = "EmailTextBox";
-            this.EmailTextBox.Size = new System.Drawing.Size(160, 20);
+            this.EmailTextBox.Size = new System.Drawing.Size(167, 20);
             this.EmailTextBox.TabIndex = 19;
             // 
             // FechaNacimientoDateTimePicker
             // 
             this.FechaNacimientoDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.FechaNacimientoDateTimePicker.Location = new System.Drawing.Point(130, 235);
+            this.FechaNacimientoDateTimePicker.Location = new System.Drawing.Point(123, 235);
             this.FechaNacimientoDateTimePicker.Name = "FechaNacimientoDateTimePicker";
-            this.FechaNacimientoDateTimePicker.Size = new System.Drawing.Size(160, 20);
+            this.FechaNacimientoDateTimePicker.Size = new System.Drawing.Size(167, 20);
             this.FechaNacimientoDateTimePicker.TabIndex = 22;
             this.FechaNacimientoDateTimePicker.ValueChanged += new System.EventHandler(this.DateTimePicker1_ValueChanged_1);
             // 
@@ -194,9 +194,9 @@
             // 
             this.BuscarButton.Image = ((System.Drawing.Image)(resources.GetObject("BuscarButton.Image")));
             this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BuscarButton.Location = new System.Drawing.Point(232, 5);
+            this.BuscarButton.Location = new System.Drawing.Point(215, 9);
             this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(75, 41);
+            this.BuscarButton.Size = new System.Drawing.Size(75, 36);
             this.BuscarButton.TabIndex = 23;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -207,7 +207,7 @@
             // 
             this.NuevoButton.Image = ((System.Drawing.Image)(resources.GetObject("NuevoButton.Image")));
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.NuevoButton.Location = new System.Drawing.Point(26, 322);
+            this.NuevoButton.Location = new System.Drawing.Point(16, 322);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(75, 38);
             this.NuevoButton.TabIndex = 24;
@@ -220,7 +220,7 @@
             // 
             this.GuardarButton.Image = ((System.Drawing.Image)(resources.GetObject("GuardarButton.Image")));
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.GuardarButton.Location = new System.Drawing.Point(130, 322);
+            this.GuardarButton.Location = new System.Drawing.Point(130, 319);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(75, 41);
             this.GuardarButton.TabIndex = 25;
@@ -233,7 +233,7 @@
             // 
             this.EliminarButton.Image = ((System.Drawing.Image)(resources.GetObject("EliminarButton.Image")));
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.EliminarButton.Location = new System.Drawing.Point(232, 322);
+            this.EliminarButton.Location = new System.Drawing.Point(232, 319);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(75, 41);
             this.EliminarButton.TabIndex = 26;
@@ -248,40 +248,41 @@
             this.SexoComboBox.Items.AddRange(new object[] {
             "Masculino",
             "Femenino"});
-            this.SexoComboBox.Location = new System.Drawing.Point(130, 260);
+            this.SexoComboBox.Location = new System.Drawing.Point(123, 260);
             this.SexoComboBox.Name = "SexoComboBox";
-            this.SexoComboBox.Size = new System.Drawing.Size(160, 21);
+            this.SexoComboBox.Size = new System.Drawing.Size(167, 21);
             this.SexoComboBox.TabIndex = 27;
             // 
             // IDNumericUpDown
             // 
-            this.IDNumericUpDown.Location = new System.Drawing.Point(130, 24);
+            this.IDNumericUpDown.Location = new System.Drawing.Point(123, 24);
             this.IDNumericUpDown.Name = "IDNumericUpDown";
-            this.IDNumericUpDown.Size = new System.Drawing.Size(96, 20);
+            this.IDNumericUpDown.Size = new System.Drawing.Size(82, 20);
             this.IDNumericUpDown.TabIndex = 28;
+            this.IDNumericUpDown.ValueChanged += new System.EventHandler(this.IDNumericUpDown_ValueChanged);
             // 
             // CelularmaskedTextBox
             // 
-            this.CelularmaskedTextBox.Location = new System.Drawing.Point(130, 182);
+            this.CelularmaskedTextBox.Location = new System.Drawing.Point(123, 182);
             this.CelularmaskedTextBox.Mask = "000-000-0000";
             this.CelularmaskedTextBox.Name = "CelularmaskedTextBox";
-            this.CelularmaskedTextBox.Size = new System.Drawing.Size(160, 20);
+            this.CelularmaskedTextBox.Size = new System.Drawing.Size(167, 20);
             this.CelularmaskedTextBox.TabIndex = 29;
             // 
             // TelefonomaskedTextBox
             // 
-            this.TelefonomaskedTextBox.Location = new System.Drawing.Point(130, 155);
+            this.TelefonomaskedTextBox.Location = new System.Drawing.Point(123, 155);
             this.TelefonomaskedTextBox.Mask = "(999)000-0000";
             this.TelefonomaskedTextBox.Name = "TelefonomaskedTextBox";
-            this.TelefonomaskedTextBox.Size = new System.Drawing.Size(160, 20);
+            this.TelefonomaskedTextBox.Size = new System.Drawing.Size(167, 20);
             this.TelefonomaskedTextBox.TabIndex = 30;
             // 
             // CedulamaskedTextBox
             // 
-            this.CedulamaskedTextBox.Location = new System.Drawing.Point(130, 129);
+            this.CedulamaskedTextBox.Location = new System.Drawing.Point(123, 129);
             this.CedulamaskedTextBox.Mask = "000-0000000-0";
             this.CedulamaskedTextBox.Name = "CedulamaskedTextBox";
-            this.CedulamaskedTextBox.Size = new System.Drawing.Size(160, 20);
+            this.CedulamaskedTextBox.Size = new System.Drawing.Size(167, 20);
             this.CedulamaskedTextBox.TabIndex = 31;
             // 
             // MyerrorProvider
@@ -290,17 +291,17 @@
             // 
             // MatriculamaskedTextBox
             // 
-            this.MatriculamaskedTextBox.Location = new System.Drawing.Point(130, 50);
+            this.MatriculamaskedTextBox.Location = new System.Drawing.Point(123, 50);
             this.MatriculamaskedTextBox.Mask = "0000-0000";
             this.MatriculamaskedTextBox.Name = "MatriculamaskedTextBox";
-            this.MatriculamaskedTextBox.Size = new System.Drawing.Size(160, 20);
+            this.MatriculamaskedTextBox.Size = new System.Drawing.Size(167, 20);
             this.MatriculamaskedTextBox.TabIndex = 32;
             // 
             // BalanceTextBox
             // 
-            this.BalanceTextBox.Location = new System.Drawing.Point(130, 287);
+            this.BalanceTextBox.Location = new System.Drawing.Point(123, 287);
             this.BalanceTextBox.Name = "BalanceTextBox";
-            this.BalanceTextBox.Size = new System.Drawing.Size(160, 20);
+            this.BalanceTextBox.Size = new System.Drawing.Size(167, 20);
             this.BalanceTextBox.TabIndex = 33;
             // 
             // RegistroEstudianteForm

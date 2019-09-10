@@ -9,31 +9,32 @@ namespace RegistroEstudiante.Entidades
 {
     public class Estudiante
     {
+        [Key]
         public int EstudianteID { get; set; }
         public string Matricula { get; set; }
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
+        public string Nombres { get; set; }
+        public string Apellidos { get; set; }
         public string Cedula { get; set; }
         public string Telefono { get; set; }
         public string Celular { get; set; }
         public string Email { get; set; }
         public DateTime FechaNacimiento { get; set; }
         public int Sexo { get; set; }
-        public double Balance { get; set; }
+        public decimal Balance { get; set; }
 
         public Estudiante()
         {
             EstudianteID = 0;
             Matricula = string.Empty;
-            Nombre = string.Empty;
-            Apellido = string.Empty;
+            Nombres = string.Empty;
+            Apellidos = string.Empty;
             Cedula = string.Empty;
             Telefono = string.Empty;
             Celular = string.Empty;
             Email = string.Empty;
             FechaNacimiento = DateTime.Now;
             Sexo = 0;
-            Balance = 0.0;
+            Balance = 0;
         }
     }
 }

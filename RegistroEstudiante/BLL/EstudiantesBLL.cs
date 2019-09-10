@@ -18,7 +18,7 @@ namespace RegistroEstudiante.BLL
             Contexto db = new Contexto();
 
             try
-            {
+            {                
                 if (db.Estudiantes.Add(estudiante) != null)
                     paso = db.SaveChanges() > 0;
             }

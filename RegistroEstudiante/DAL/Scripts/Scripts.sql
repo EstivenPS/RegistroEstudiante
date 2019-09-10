@@ -1,18 +1,18 @@
-Create Database EstudianteDB
+Create Database EstudiantesDB
 Go
-Use EstudianteDB
+Use EstudiantesDB
 Go
 Create Table Estudiantes
 (
-	EstudianteId int identity,
+	EstudianteId int primary key identity(1,1),
 	Matricula varchar(9),
 	Nombres varchar(30),
-	Apellido varchar(30),
+	Apellidos varchar(30),
 	Cedula varchar(13),
-	Telefono varchar(14),
-	Celular varchar(14),
+	Telefono varchar(13),
+	Celular varchar(13),
 	Email varchar(50),
 	FechaNacimiento date,
 	Sexo int,
-	Balance money
+	Balance decimal(9,2)
 );
