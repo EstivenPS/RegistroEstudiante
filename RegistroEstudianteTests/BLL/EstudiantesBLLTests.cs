@@ -16,11 +16,11 @@ namespace RegistroEstudiante.BLL.Tests
         public void GuardarTest()
         {
             bool paso;
-            Estudiante estudiante = new Estudiante();
+            Estudiantes estudiante = new Estudiantes();
             estudiante.EstudianteID = 0;
             estudiante.Matricula = "0000-0000";
-            estudiante.Nombre = "Prueba";
-            estudiante.Apellido = "Prueba";
+            estudiante.Nombres = "Prueba";
+            estudiante.Apellidos = "Prueba";
             estudiante.Cedula = "000-0000000-0";
             estudiante.Telefono = "000-000-0000";
             estudiante.Celular = "000-000-0000";
@@ -30,26 +30,54 @@ namespace RegistroEstudiante.BLL.Tests
             estudiante.Balance = 0;
             paso = EstudiantesBLL.Guardar(estudiante);
             Assert.AreEqual(paso, true);
-
-            //Assert.Fail();
         }
 
         [TestMethod()]
         public void ModificarTest()
         {
-            Assert.Fail();
+            bool paso;
+            Estudiantes estudiante = new Estudiantes();
+            estudiante.EstudianteID = 2;
+            estudiante.Matricula = "0000-0000";
+            estudiante.Nombres = "Prueba";
+            estudiante.Apellidos = "Prueba";
+            estudiante.Cedula = "000-0000000-0";
+            estudiante.Telefono = "000-000-0000";
+            estudiante.Celular = "000-000-0000";
+            estudiante.Email = "Prueba@prueba.com";
+            estudiante.FechaNacimiento = DateTime.Now;
+            estudiante.Sexo = 0;
+            estudiante.Balance = 0;
+            paso = EstudiantesBLL.Modificar(estudiante);
+            Assert.AreEqual(paso, true);
         }
 
         [TestMethod()]
         public void EliminarTest()
         {
-            Assert.Fail();
+            bool paso;
+            Estudiantes estudiante = new Estudiantes();
+            estudiante.EstudianteID = 2;
+            estudiante.Matricula = "0000-0000";
+            estudiante.Nombres = "Prueba";
+            estudiante.Apellidos = "Prueba";
+            estudiante.Cedula = "000-0000000-0";
+            estudiante.Telefono = "000-000-0000";
+            estudiante.Celular = "000-000-0000";
+            estudiante.Email = "Prueba@prueba.com";
+            estudiante.FechaNacimiento = DateTime.Now;
+            estudiante.Sexo = 0;
+            estudiante.Balance = 0;
+            paso = EstudiantesBLL.Eliminar(estudiante.EstudianteID);
+            Assert.AreEqual(paso, true);
         }
 
         [TestMethod()]
         public void BuscarTest()
         {
-            Assert.Fail();
+            Estudiantes estudiante = new Estudiantes();
+            estudiante = EstudiantesBLL.Buscar(2);
+            Assert.AreEqual(estudiante != null, true);
         }
 
         [TestMethod()]

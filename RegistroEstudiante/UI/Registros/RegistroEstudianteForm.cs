@@ -63,7 +63,6 @@ namespace RegistroEstudiante
             SexoComboBox.Text = string.Empty;
             BalanceTextBox.Text = string.Empty;
             MyerrorProvider.Clear();
-
         }
 
         private void NuevoButton_Click(object sender, EventArgs e)
@@ -71,9 +70,10 @@ namespace RegistroEstudiante
             Limpiar();
         }
 
-        private Estudiante LLenaClase()
+        private Estudiantes LLenaClase()
         {
-            Estudiante estudiante = new Estudiante();
+            Estudiantes estudiante = new Estudiantes();
+
             estudiante.EstudianteID = Convert.ToInt32(IDNumericUpDown.Value);
             estudiante.Matricula = MatriculamaskedTextBox.Text;
             estudiante.Nombres = NombreTextBox.Text;
@@ -84,12 +84,11 @@ namespace RegistroEstudiante
             estudiante.Email = EmailTextBox.Text;
             estudiante.FechaNacimiento = FechaNacimientoDateTimePicker.Value;
             estudiante.Sexo = SexoComboBox.SelectedIndex;
-            estudiante.Balance = Convert.ToDecimal(BalanceTextBox.Text);
-
+             
             return estudiante;
         }
 
-        private void LLenaCampo(Estudiante estudiante)
+        private void LLenaCampo(Estudiantes estudiante)
         {
             IDNumericUpDown.Value = estudiante.EstudianteID;
             MatriculamaskedTextBox.Text = estudiante.Matricula;
@@ -171,25 +170,18 @@ namespace RegistroEstudiante
                 paso = false;
             }
 
-            if (string.IsNullOrWhiteSpace(BalanceTextBox.Text))
-            {
-                MyerrorProvider.SetError(BalanceTextBox, "El campo Balance no puede estar vacio");
-                BalanceTextBox.Focus();
-                paso = false;
-            }
-
             return paso;
         }
 
         private bool ExisteEnLaBaseDeDatos()
         {
-            Estudiante estudiante = EstudiantesBLL.Buscar((int)IDNumericUpDown.Value);
+            Estudiantes estudiante = EstudiantesBLL.Buscar((int)IDNumericUpDown.Value);
             return (estudiante != null);
         }
 
         private void GuardarButton_Click(object sender, EventArgs e)
         {
-            Estudiante estudiante;
+            Estudiantes estudiante;
             bool paso = false;
 
             if (!Validar())
@@ -212,16 +204,16 @@ namespace RegistroEstudiante
             if (paso)
             {
                 Limpiar();
-                MessageBox.Show("Guardado!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Guardado", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
-                MessageBox.Show("No fue posible guardar!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("No fue posible guardar", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void BuscarButton_Click(object sender, EventArgs e)
         {
             int id;
-            Estudiante estudiante = new Estudiante();
+            Estudiantes estudiante = new Estudiantes();
             int.TryParse(IDNumericUpDown.Text, out id);
 
             Limpiar();
@@ -230,12 +222,11 @@ namespace RegistroEstudiante
 
             if(estudiante != null)
             {
-                MessageBox.Show("Estudiante Encontrado");
                 LLenaCampo(estudiante);
             }
             else
             {
-                MessageBox.Show("Estudiante No Encontrado");
+                MessageBox.Show("Estudiante no encontrado");
             }
         }
 

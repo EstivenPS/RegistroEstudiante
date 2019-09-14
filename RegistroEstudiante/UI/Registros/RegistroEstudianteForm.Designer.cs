@@ -207,7 +207,7 @@
             // 
             this.NuevoButton.Image = ((System.Drawing.Image)(resources.GetObject("NuevoButton.Image")));
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.NuevoButton.Location = new System.Drawing.Point(16, 322);
+            this.NuevoButton.Location = new System.Drawing.Point(15, 322);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(75, 38);
             this.NuevoButton.TabIndex = 24;
@@ -220,7 +220,7 @@
             // 
             this.GuardarButton.Image = ((System.Drawing.Image)(resources.GetObject("GuardarButton.Image")));
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.GuardarButton.Location = new System.Drawing.Point(130, 319);
+            this.GuardarButton.Location = new System.Drawing.Point(115, 319);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(75, 41);
             this.GuardarButton.TabIndex = 25;
@@ -233,7 +233,7 @@
             // 
             this.EliminarButton.Image = ((System.Drawing.Image)(resources.GetObject("EliminarButton.Image")));
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.EliminarButton.Location = new System.Drawing.Point(232, 319);
+            this.EliminarButton.Location = new System.Drawing.Point(215, 319);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(75, 41);
             this.EliminarButton.TabIndex = 26;
@@ -272,7 +272,7 @@
             // TelefonomaskedTextBox
             // 
             this.TelefonomaskedTextBox.Location = new System.Drawing.Point(123, 155);
-            this.TelefonomaskedTextBox.Mask = "(999)000-0000";
+            this.TelefonomaskedTextBox.Mask = "000-000-0000";
             this.TelefonomaskedTextBox.Name = "TelefonomaskedTextBox";
             this.TelefonomaskedTextBox.Size = new System.Drawing.Size(167, 20);
             this.TelefonomaskedTextBox.TabIndex = 30;
@@ -301,6 +301,7 @@
             // 
             this.BalanceTextBox.Location = new System.Drawing.Point(123, 287);
             this.BalanceTextBox.Name = "BalanceTextBox";
+            this.BalanceTextBox.ReadOnly = true;
             this.BalanceTextBox.Size = new System.Drawing.Size(167, 20);
             this.BalanceTextBox.TabIndex = 33;
             // 
@@ -308,7 +309,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(330, 375);
+            this.ClientSize = new System.Drawing.Size(304, 375);
             this.Controls.Add(this.BalanceTextBox);
             this.Controls.Add(this.MatriculamaskedTextBox);
             this.Controls.Add(this.CedulamaskedTextBox);

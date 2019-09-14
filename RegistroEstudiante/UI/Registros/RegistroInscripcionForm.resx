@@ -117,34 +117,67 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="NuevoInscripcionButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
+        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxMAAAsTAQCanBgAAAIESURBVDhPfZO7axRRFIdvhECU
+        sMHVZB4xPkASQREsrMRYWCk2KoKFdlbiX2BrZyBBEwtRYREJFmLhvFaj4gM1GsQgQURFgpVJ5rGzi8bu
+        +p2ZnbC7iMXHnLnn97v3njNnVOQaOZ6pQp4wRNwbecY6GIcN0BN65rbQQ+ebmVbASFCYcyaIP8Jd0HAf
+        5uAmtJgtpVLMiWPLJpdYnITPIKZOvsNVGIsdu6uGT/0JejjNkh2vtQj/x3ToWmo1WK/UqlfayhWusPip
+        XWS0xG18RT/12+sbVtGDwT7qxGjpyNlEUkzEgj+YG9x+GMhj8rFnLabOln6ubPSSnE4e79WN+Qs6fjis
+        01dHdH3urK49O6DT2ZM6fX1M114e1vXZE+SOckjZYYOSdG5Cdo2r23Xj/Tnd+HA+E2YbPRphkzPZ2q+F
+        i7r2/CAcErPc4gaNMsqcfC+e2a3jmT2ZOH1zXNffndbJ0/35qS9Gdf3tKZ2gSZ7skzKC0DcGxMxAmPOR
+        Z+d1upvz2qTeYKhZr1Cso/PNL/g2qqXA3sE3vkWCLmbdBGlaQbG2xiL6ynJg7VI/q3zjfMJkQP4l7uSO
+        6JeqDMkKkxI62chdhtvwrSnq5AdUYHLFN7uWA5ltGfYmMTMLcgMpwQExVWGB9Yrk1/4FaDPnCXMn4jLN
+        645d63rk2iXewRrhia4wG+ovFKAYwSuORekAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="GuardarInscripcionButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
+        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxMAAAsTAQCanBgAAAIUSURBVDhPdZBLaxNRGIbnn4iX
+        qLUgxaTFH6D/QAVxLS5duShkUTdeoKVlopimmtq6kBaxooLUlGhLtGMzaW6SSTIztba5oPVM5pKGKOjr
+        +SaaJoQs3sX3vc9zzpkRToil6yMhrXz8tsSeShpLJJPs9co79ioSZRmlwEynzn6YFms06uy5rDPOJb1B
+        /Zj3gSoIw0HV8E3r4EssSBpeRpYhzj/B5OM5rMZl2PsNcBlcxlK8xXG+yGWP4AuqNZI9t9axuKHjTTSC
+        ifAsxh+FEUtswuEysyz8au7jhbzlcsRzL0syG6ab70i4OiehsL2DVC6HlKKgureHmm3DtC18M0xcm5fc
+        m4nnnu3KvqAG730FnptRnBdjuDIr43JYxsWZT7gQWselGQnnptbcnjjiyfsnq/wp7gKnAwoGxVxPaN/J
+        kXcgt0Nlv3RyHTL/ezgVKGLwXv9Qf4ZzXTKJI9Mq7q6WsZT9jmeZ3tB+fK2MsyH1/wEtmU4cXd7F76YD
+        x6rBMhmP0REGm+//8N7/tuS+oC2fFIsIfKjgZ8NBJl/ERjKLePpzOzRncgXe2y5HfJc8FaugyUt9p4S8
+        /gWFre12aNa/7ro9cR2yZhzIjgtnlCKyebUdmumAblkzhKHJzdpAQOXLqlsatoOaU+8J7VtyFQP8m4cm
+        EqZwaGzxxtGx95XRBYml0mn2UU71DfXEHfGvVA8/lPx/AfkQpUwTwlMWAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="EliminarInscripcionButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
+        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAAEJwAABCcASbNOjQAAAEgSURBVDhPfdNPK0RRGMfxSWHG
+        C9GNqUnZeBXKwoYo4s3Mis14A5KsRER2iojyAvwXiqa8A77f2zl65jYsPovzO89zz73nnFv7mimiQcxj
+        F3f4xD32sIgh/NbHxgKn+P7HGZroaR7FC/o1VL1hHGXzMM6RJ9+xHcbaQXz4NRo2z4XwCVMwX0/ZRhpP
+        4jFlWjLcD4ErmmWzGAjjTeTaY4P4NK2hjtwgP62NWPfsRLcSyhVj8zSqNV0nqit3MILY3IBvFOvKlQ9C
+        4K7GJleM4y3k2hODhRB4m9xV8/yN7rrjFm5TphVDN+MyhK+IuypX9Bjz+AblOWsMXo7Y8JcP+BY9d9s7
+        e4F+DdkVJlD2xGZ5vss4xAP8qzyNI6zCXU+1Re0HxKjD3Z77vtcAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="BuscarInscripcionButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
+        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxMAAAsTAQCanBgAAAKgSURBVDhPjZLNTxNBGIdHbQ9K
+        +W6hLS3bzsx22+5uodttKdulrbbgwYvRxMhBNHCW6sFoPFILlPhBqBiVgHAw4YjF+A8YvJpgNMYsJhIC
+        RhCStkLCZZ2lxpRoopM8meTdeTLv+9sB2qoyWQDmoyLEgVHoEu9gVroNaTGDaHGU8clBQ03Dwbk/ls5k
+        BvV2+gLGwYe+yyncPpO3hBaWvJFni9a2vkFE02Ku0ers1VksQGc+DHDysgAZfw5mc/qEUhhJb+1/T62V
+        1LhS2O5WClnL+JTezoYmHFJSpCLdoBJAUVzWdb7fllwtZZ5v7amP1wtq78dNNb68oSbef1Pltb2sf+B6
+        C0LCGPJ2gEoAxMIwP73QlN7cLz3dKKjC23U1tvxVTbwrc1op7ErkuxP500QwHpJJOLfC+Tec1qp2Y0y7
+        8Zeokfy0o0ZfLLUhT/gG5mSI+S4SbhlA0s0E5xabYkrhx0GrFaJGj1LclWZfNjuxkG5lBCMBaNgJALuD
+        Wb7/WktcKY0kPmweEpNk5uhq8S5z6WoLpoVhmusAuAJAQTaAXIEJ+GBKf/Jzcaxnpbittdq9UtxJfCne
+        o+5PAruTT7ci7qzL16WjuXLLbt9J7U8fAQ0m20WaCebYvkHYOZ23yAuv+fBM3spfSVHkoaQxJw1QjDgP
+        WWme9kVtiMhMWSYvrNYIIBsOkeSz0BUYQt7wTTLjEHIFhx2e4DnMRV7R3liPodoo2nH7LN0ed/yWDXUm
+        4CTRQ04CyBcxksMUwehkw+BEdf1RxHbO+wXJb242g2M6vctG++fcbQn4N5nMJJNAIsBBaserakhXkt3j
+        l2cZN8fW1VutjU2tvMMTmvi3bKgt1/kuB6k9oVl5kuxnyGiZ/5a1hBEvU2Qfp7nII2vHqdRPV28JZlvx
+        G4YAAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="MyErrorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="registroEstudiantesToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
-        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAAWHAAAFhwAbztuksAAAEhSURBVDhPndG7SkNBFIXheQbt
-        RQshpSCIjYKNZbr01pImVmohKUSDVhZ2QhASIbaxEBtRUVDII3irbMQbilro8V9hJqxoKhd8JLNn9mHO
-        PiHLsn/zzOEGxxhWwTKEQ9xiXgXPOPSoZB+ePfj+JDopwTev0Y8pDOAUvr+ATvLwzSXomvqvq87iMa6l
-        gK5U8YoLlJEOSgM70H4NXRlBBWrciLz5BLrqOdYwinb0Xm9IB5+ha3vzJtSY1u+YRjiKBTeDRWhwdWi6
-        L/AzZwj3VvjGCpahCV+hhS0U8YR0Vn3hwQoHUHNauyZ8FuoLn1ZYxaWt3Rc0tI+41m/Yxl0srMNv8ptu
-        pXfXJ9tFO30YgyaYntyL3nsCg/iTHHo1JfoKMSH8AICructg/GgtAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="registroDeInscripcionesToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
-        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAAEL4AABC+Acsb2CkAAAHsSURBVDhPjdJPLNthHMdxkUgW
-        mSwRIllCsuzg5jIzo6WHpjtI/Dnt5IBWq0XiT9sREmuD1lKODrYTLmaTGiUsdH9CQkhQOnaa7iKNNCS1
-        WvT5+nzrV6k2xOGV37/n3T7P7/ckyXX2+9HazDh+g69QyPf4QSpk3iIDHsk0fT2y+n6CF7hWwm8o4Pgn
-        fAd3nCVYeFlj8VU6pkg946XSRoe3WN2bhfsl/JzjNXgMaTEewgOEg+X2j2T0nFPLxomoc3pI0TS4jxmU
-        4vk6xz+Ap361NgnCnop3n8jsvaB614F41fUh3L4VFDwDXgLeQWM05n+LDa2R8BfCuQOhNA4L/dIf0b59
-        RuW2CSrW9L3hcQlxbKhx7UvhoTB6QlRmHSc892PcEx4bjXmNyZiOrWrISaa9//yChNI0HNYv+4Rx5x+V
-        WcaoqMaixbhJeAbXMYcKvE1qWjmi5lW/UHWMhA3uv1I4yqGBA3BCPp9HYz52Yy2zqs6RgH75kFo3T0Xb
-        VjA+ZF/gRpwC/It5RbVWuarz/ZHB7YusMS5MiHlDZMMipEMOdtS4vGHgGDN5jevYMCFeAN4xAdgFgpBM
-        a/uMYwt0SKqBx0/DdczbMxfaoBtM0jl/y7cSC6iBlzcPzyESrwNPmT/BXaaAx+3BU7nOnnQJAICX3MOB
-        vgYAAAAASUVORK5CYII=
-</value>
-  </data>
 </root>

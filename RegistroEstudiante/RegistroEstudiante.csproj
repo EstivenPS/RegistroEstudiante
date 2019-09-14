@@ -42,6 +42,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,13 +55,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\EstudiantesBLL.cs" />
+    <Compile Include="BLL\InscripcionesBLL.cs" />
     <Compile Include="DAL\Contexto.cs" />
-    <Compile Include="Entidades\Estudiante.cs" />
+    <Compile Include="Entidades\Estudiantes.cs" />
+    <Compile Include="Entidades\Inscripciones.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Consultas\ConsultaEstudianteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\ConsultaEstudianteForm.Designer.cs">
+      <DependentUpon>ConsultaEstudianteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Consultas\ConsultaInscripcionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\ConsultaInscripcionForm.Designer.cs">
+      <DependentUpon>ConsultaInscripcionForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Registros\RegistroEstudianteForm.cs">
       <SubType>Form</SubType>
@@ -70,8 +85,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Registros\RegistroInscripcionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\RegistroInscripcionForm.Designer.cs">
+      <DependentUpon>RegistroInscripcionForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Consultas\ConsultaEstudianteForm.resx">
+      <DependentUpon>ConsultaEstudianteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Consultas\ConsultaInscripcionForm.resx">
+      <DependentUpon>ConsultaInscripcionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\RegistroEstudianteForm.resx">
       <DependentUpon>RegistroEstudianteForm.cs</DependentUpon>
@@ -85,6 +112,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\Registros\RegistroInscripcionForm.resx">
+      <DependentUpon>RegistroInscripcionForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -101,7 +131,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resource\" />
-    <Folder Include="UI\Consultas\" />
     <Folder Include="UI\Reportes\" />
   </ItemGroup>
   <ItemGroup>

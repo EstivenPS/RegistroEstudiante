@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RegistroEstudiante.Entidades
 {
-    public class Estudiante
+    public class Estudiantes
     {
         [Key]
         public int EstudianteID { get; set; }
@@ -22,7 +22,7 @@ namespace RegistroEstudiante.Entidades
         public int Sexo { get; set; }
         public decimal Balance { get; set; }
 
-        public Estudiante()
+        public Estudiantes()
         {
             EstudianteID = 0;
             Matricula = string.Empty;

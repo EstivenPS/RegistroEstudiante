@@ -10,8 +10,9 @@ namespace RegistroEstudiante.DAL
 {
     public class Contexto : DbContext
     {
-        public DbSet<Estudiante> Estudiantes { get; set; }
-
+        public DbSet<Estudiantes> Estudiantes { get; set; }
+        //public DbSet<Inscripcion> Inscripciones { get; set; }
+        public DbSet<Inscripciones> Inscripciones { get; set; }
         public Contexto() : base("ConStr") { }
     }
 }

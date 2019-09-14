@@ -4,22 +4,22 @@ using System.Data.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq.Expressions;
 
 namespace RegistroEstudiante.BLL
 {
-    public class EstudiantesBLL
+    public class InscripcionesBLL
     {
-        public static bool Guardar(Estudiantes estudiante)
+        public static bool Guardar(Inscripciones inscripcion)
         {
             bool paso = false;
             Contexto db = new Contexto();
 
             try
-            {                
-                if (db.Estudiantes.Add(estudiante) != null)
+            {
+                if (db.Inscripciones.Add(inscripcion) != null)
                     paso = db.SaveChanges() > 0;
             }
             catch (Exception)
@@ -34,15 +34,15 @@ namespace RegistroEstudiante.BLL
             return paso;
         }
 
-        public static bool Modificar(Estudiantes estudiante)
+        public static bool Modificar(Inscripciones inscripcion)
         {
             bool paso = false;
             Contexto db = new Contexto();
 
             try
             {
-                db.Entry(estudiante).State = EntityState.Modified;
-                paso = (db.SaveChanges() > 0);
+                db.Entry(inscripcion).State = EntityState.Modified;
+                paso = db.SaveChanges() > 0;
             }
             catch(Exception)
             {
@@ -60,15 +60,15 @@ namespace RegistroEstudiante.BLL
         {
             bool paso = false;
             Contexto db = new Contexto();
-
+            
             try
             {
-                var eliminar = db.Estudiantes.Find(id);
+                var eliminar = db.Inscripciones.Find(id);
                 db.Entry(eliminar).State = EntityState.Deleted;
 
-                paso = (db.SaveChanges() > 0);
+                paso = db.SaveChanges() > 0;
             }
-            catch(Exception)
+            catch (Exception)
             {
                 throw;
             }
@@ -80,14 +80,14 @@ namespace RegistroEstudiante.BLL
             return paso;
         }
 
-        public static Estudiantes Buscar(int id)
+        public static Inscripciones Buscar(int id)
         {
             Contexto db = new Contexto();
-            Estudiantes estudiante = new Estudiantes();
+            Inscripciones inscripcion = new Inscripciones();
 
             try
             {
-                estudiante = db.Estudiantes.Find(id);
+                inscripcion = db.Inscripciones.Find(id);
             }
             catch(Exception)
             {
@@ -98,17 +98,17 @@ namespace RegistroEstudiante.BLL
                 db.Dispose();
             }
 
-            return estudiante;
+            return inscripcion;
         }
 
-        public static List<Estudiantes> GetList(Expression<Func<Estudiantes, bool>> estudiante)
+        public static List<Inscripciones> GetList(Expression<Func<Inscripciones, bool>> inscripcion)
         {
-            List<Estudiantes> Lista = new List<Estudiantes>();
+            List<Inscripciones> Lista = new List<Inscripciones>();
             Contexto db = new Contexto();
 
             try
             {
-                Lista = db.Estudiantes.Where(estudiante).ToList();
+                Lista = db.Inscripciones.Where(inscripcion).ToList();
             }
             catch(Exception)
             {
@@ -123,3 +123,4 @@ namespace RegistroEstudiante.BLL
         }
     }
 }
+

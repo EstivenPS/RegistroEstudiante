@@ -16,3 +16,16 @@ Create Table Estudiantes
 	Sexo int,
 	Balance decimal(9,2)
 );
+Go
+Use EstudiantesDB
+Go
+Create Table Inscripciones
+(
+	InscripcionId int primary key identity(1,1),
+	Fecha date,
+	EstudianteId int foreign key references Estudiantes(EstudianteId),
+	Comentarios varchar(max),
+	Monto decimal(9,2),
+	Deposito decimal(9,2),
+	Balance decimal(9,2)
+);
